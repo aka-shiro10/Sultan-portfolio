@@ -6,8 +6,12 @@ import path from "node:path";
 //   "src/visual-edits/component-tagger-loader.js"
 // );
 
+const repoName = "Sultan-portfolio";
+
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: "export",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}`,
   images: {
     unoptimized: true,
     remotePatterns: [

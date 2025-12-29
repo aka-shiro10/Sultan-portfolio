@@ -272,7 +272,7 @@ export default function Home() {
                   boxShadow: "0 0 20px rgba(239, 68, 68, 0.4)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                href="/resume.pdf"
+                href="resume.pdf"
                 download="Sultan_Muhammad_Khan_Resume.pdf"
                 className="flex items-center gap-3 px-6 py-3 bg-primary text-white font-game text-[10px] rounded-lg transition-all !whitespace-pre-line"
               >
