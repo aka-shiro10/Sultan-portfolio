@@ -70,48 +70,6 @@ Node.js >= 18.17.0
 npm >= 9.x (or bun/pnpm)
 ```
 
-### Installation
-
-```bash
-# Clone repository
-git clone https://github.com/aka-shiro10/sultan-portfolio.git
-cd sultan-portfolio
-
-# Install dependencies (with legacy peer deps handling)
-npm install --legacy-peer-deps
-
-# Start dev server with Turbopack
-npm run dev
-```
-
-### Environment Variables
-
-Create `.env.local`:
-
-```env
-# Optional: Database configuration
-DATABASE_URL=your_database_url
-
-# Optional: Auth configuration
-BETTER_AUTH_SECRET=your_secret_key
-```
-
-### Build & Deploy
-
-```bash
-# Production build
-npm run build
-
-# Start production server
-npm start
-
-# Type checking
-npm run type-check
-
-# Linting
-npm run lint
-```
-
 ## 🎨 Features
 
 ### Interactive UI Components
@@ -154,44 +112,6 @@ interface GameStore {
 - **CORS**: Configured for Supabase assets
 - **Auth**: Better Auth with session management
 - **Validation**: Zod schemas for runtime type safety
-
-## 🚦 CI/CD
-
-Recommended deployment on Vercel:
-
-```bash
-# Deploy to Vercel
-vercel --prod
-
-# Or use GitHub integration for auto-deployment
-```
-
-## 📚 API Reference
-
-### Custom Hooks
-
-```typescript
-// Game state management
-const { addLog, addXp } = useGameStore();
-
-// Responsive detection
-const isMobile = useMobile();
-```
-
-### Utility Functions
-
-```typescript
-// Tailwind class merging
-cn("base-classes", conditionalClasses);
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
 
 ## 📄 License
 
