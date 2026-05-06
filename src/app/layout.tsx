@@ -4,16 +4,27 @@ import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
-export const metadata = {
-  title: 'Sultan Muhammad Khan — AI / ML Engineer',
-  description: 'Final-year AI student and ML engineer building end-to-end systems with Python, Unity, and modern LLM stacks. Featured project: ENE — 3D AI Desktop Companion.',
-  keywords: ['Sultan Muhammad Khan', 'AI Engineer', 'Machine Learning', 'Computer Vision', 'LLM', 'Unity', 'Python', 'PAF-IAST'],
-  authors: [{ name: 'Sultan Muhammad Khan' }],
+export const metadata: Metadata = {
+  title: "Sultan Muhammad Khan — AI / ML Engineer",
+  description:
+    "Final-year AI student and ML engineer building end-to-end systems with Python, Unity, and modern LLM stacks. Featured project: ENE — 3D AI Desktop Companion.",
+  keywords: [
+    "Sultan Muhammad Khan",
+    "AI Engineer",
+    "Machine Learning",
+    "Computer Vision",
+    "LLM",
+    "Unity",
+    "Python",
+    "PAF-IAST",
+  ],
+  authors: [{ name: "Sultan Muhammad Khan" }],
   openGraph: {
-    title: 'Sultan Muhammad Khan — AI / ML Engineer',
-    description: 'Building AI agents, computer vision systems, and LLM-powered apps.',
-    type: 'website',
-    url: 'https://aka-shiro10.github.io/Sultan-portfolio/',
+    title: "Sultan Muhammad Khan — AI / ML Engineer",
+    description:
+      "Building AI agents, computer vision systems, and LLM-powered apps.",
+    type: "website",
+    url: "https://aka-shiro10.github.io/Sultan-portfolio/",
   },
 };
 
