@@ -55,152 +55,109 @@ export default function Home() {
     addXp(2);
   };
 
-  const projects = [
-    {
-      title: "Evolution Simulator",
-      description:
-        "Unity simulation using artificial neural networks and genetic algorithms to evolve agent behaviors and environmental food effects.",
-      tags: ["Unity", "ANN", "Genetic Algorithms"],
-    },
-    {
-      title: "Muffin Time",
-      description:
-        "Networked Unity platform game with handcrafted art and real-time multiplayer mechanics.",
-      tags: ["Unity", "Networking", "Photoshop"],
-    },
-    {
-      title: "Car Racing AI Trainer",
-      description:
-        "Unity + ML-Agents setup that trains RL agents to learn driving and racing tactics.",
-      tags: ["Unity", "ML-Agents"],
-    },
-    {
-      title: "Network Anomaly Detection",
-      description:
-        "Python ML system that flags anomalous network traffic and presents results in a simple GUI.",
-      tags: ["Python", "ML", "GUI"],
-    },
-    {
-      title: "Chess vs. AI",
-      description:
-        "Python chess game with an AI opponent (minimax/heuristic-based) for single-player practice.",
-      tags: ["Python"],
-    },
-    {
-      title: "Hotel Management System",
-      description:
-        "C++ desktop application for managing bookings, inventory, and billing workflows.",
-      tags: ["C++", "Desktop App"],
-    },
-    {
-      title: "Snake Game",
-      description:
-        "Classic Snake implemented in Python/Pygame with score persistence and simple level mechanics.",
-      tags: ["Python", "Pygame"],
-    },
-    {
-      title: "Media Player",
-      description:
-        "Python-based media player supporting audio/video playback and basic library features.",
-      tags: ["Python"],
-    },
-    {
-      title: "Macropad",
-      description:
-        "Custom programmable keypad using Arduino Pro Micro and QMK for shortcuts and macros.",
-      tags: ["Arduino", "QMK Firmware"],
-    },
-    {
-      title: "Desktop AI Pet",
-      description:
-        "Desktop companion using computer vision and NLP to interact and perform playful tasks.",
-      tags: ["Python", "CV", "NLP"],
-    },
-    {
-      title: "Flabby Bird",
-      description:
-        "Flappy-Bird-style game in Python with SQLite leaderboard and smooth arcade controls.",
-      tags: ["Python", "Pygame", "SQLite"],
-    },
-    {
-      title: "Visual Novel",
-      description:
-        "Story-driven game built with Ren'Py featuring branching dialogue and character art.",
-      tags: ["Ren'Py"],
-    },
-    {
-      title: "Snapchat Clone",
-      description:
-        "Unity prototype of ephemeral messaging and camera-first social features.",
-      tags: ["Unity"],
-    },
-    {
-      title: "Chatting App",
-      description:
-        "Real-time chat application deployed on Microsoft Azure with database and messaging.",
-      tags: ["Azure", "Real-time"],
-    },
-    {
-      title: "E-commons Clothing",
-      description:
-        "Client WooCommerce site for an online clothing store with custom theming.",
-      tags: ["WordPress", "WooCommerce"],
-    },
-    {
-      title: "Hero Academy",
-      description:
-        "A specialized website where teachers can provide tuition to students efficiently.",
-      tags: ["React"],
-    },
-    {
-      title: "WakeelOnline",
-      description:
-        "React + TailwindCSS platform connecting clients with verified lawyers and profile management.",
-      tags: ["React", "TailwindCSS"],
-    },
-    {
-      title: "Text-to-Speech",
-      description:
-        "Python TTS module that converts text into natural-sounding speech for accessibility.",
-      tags: ["Python"],
-    },
-    {
-      title: "E-commerce (Games)",
-      description:
-        "WordPress + WooCommerce storefront built to sell indie games and digital products.",
-      tags: ["WordPress", "WooCommerce"],
-    },
-    {
-      title: "Server Parallel Log Analyzer",
-      description:
-        "High-performance Python tool for concurrent processing of massive server logs with real-time statistics.",
-      tags: ["Python", "Parallel Computing", "Analysis"],
-    },
-  ];
+const projects = [
+  // ── AI / ML  (primary signal) ──────────────────────────────
+  {
+    title: "Evolution Simulator",
+    description:
+      "Unity simulation where agents with feed-forward neural networks evolve foraging behavior under selection pressure. Population-based genetic algorithm with mutation and crossover.",
+    tags: ["Unity", "ANN", "Genetic Algorithms"],
+    github: "https://github.com/aka-shiro10",
+  },
+  {
+    title: "Car Racing AI Trainer",
+    description:
+      "Reinforcement learning setup using Unity ML-Agents to train cars on procedurally generated tracks. Reward shaping experiments for stable lap-time learning.",
+    tags: ["Unity", "ML-Agents", "Reinforcement Learning"],
+    github: "https://github.com/aka-shiro10",
+  },
+  {
+    title: "Network Anomaly Detection",
+    description:
+      "Python ML pipeline that flags anomalous network traffic flows using classical models on labeled traffic data. Packaged with a Tkinter GUI for live inspection.",
+    tags: ["Python", "scikit-learn", "GUI"],
+    github: "https://github.com/aka-shiro10",
+  },
+  {
+    title: "Server Parallel Log Analyzer",
+    description:
+      "High-performance log-processing tool using Python multiprocessing to chunk and aggregate massive server logs in parallel with real-time statistics.",
+    tags: ["Python", "Multiprocessing", "Systems"],
+    github: "https://github.com/aka-shiro10",
+  },
 
-  const internships = [
-    {
-      company: "Sybrid",
-      role: "Data/ML Intern",
-      period: "May 2025 – Jul 2025",
-      tasks:
-        "Curated datasets for ETL, set up a vector DB, prototyped an internal RAG chatbot.",
-    },
-    {
-      company: "KeyMech",
-      role: "Software Intern",
-      period: "Jul 2024 – Sep 2024",
-      tasks:
-        "Delivered cross-platform mobile features, API integrations, production builds; 320 hrs.",
-    },
-    {
-      company: "Seasons Foods",
-      role: "Audit Intern",
-      period: "Aug 2023 – Sep 2023",
-      tasks:
-        "Conducted inventory audits, reconciliations, and financial reporting; 240 hrs.",
-    },
-  ];
+  // ── Game Development  (secondary signal) ──────────────────
+  {
+    title: "Muffin Time",
+    description:
+      "Networked Unity platformer with handcrafted art and real-time multiplayer mechanics. Built networking, lobby system, and synced gameplay state across clients.",
+    tags: ["Unity", "Networking", "Multiplayer"],
+    github: "https://github.com/aka-shiro10",
+  },
+  {
+    title: "Visual Novel",
+    description:
+      "Story-driven game built with Ren'Py featuring branching dialogue, character art, and persistent save state.",
+    tags: ["Ren'Py", "Narrative Design"],
+    github: "https://github.com/aka-shiro10",
+  },
+
+  // ── Web Development  (tertiary signal) ────────────────────
+  {
+    title: "WakeelOnline",
+    description:
+      "React + TailwindCSS platform connecting clients with verified lawyers, including profile management, search, and consultation booking.",
+    tags: ["React", "TailwindCSS", "Full-Stack"],
+    github: "https://github.com/aka-shiro10",
+  },
+  {
+    title: "Hero Academy",
+    description:
+      "Web platform where teachers can offer tuition to students, with class scheduling and student-teacher matching.",
+    tags: ["React", "Web App"],
+    github: "https://github.com/aka-shiro10",
+  },
+  {
+    title: "Chatting App",
+    description:
+      "Real-time chat application deployed on Microsoft Azure with cloud database, authentication, and live messaging.",
+    tags: ["Azure", "Real-time", "Cloud"],
+    github: "https://github.com/aka-shiro10",
+  },
+
+  // ── Hardware / Other ──────────────────────────────────────
+  {
+    title: "Macropad",
+    description:
+      "Custom programmable keypad built with Arduino Pro Micro and QMK firmware for productivity shortcuts and macros.",
+    tags: ["Arduino", "QMK", "Hardware"],
+    github: "https://github.com/aka-shiro10",
+  },
+];
+
+const internships = [
+  {
+    company: "Sybrid",
+    role: "Data / ML Intern",
+    period: "May 2025 – Jul 2025",
+    tasks:
+      "Built ETL pipelines, set up a vector DB, and prototyped a RAG chatbot. Trained the RAG pipeline using a custom bash automation script for repeatable end-to-end experiments.",
+  },
+  {
+    company: "KeyMech",
+    role: "Software Intern",
+    period: "Jul 2024 – Sep 2024",
+    tasks:
+      "Shipped cross-platform mobile features and REST API integrations used by field maintenance teams. Owned production build pipelines.",
+  },
+  {
+    company: "Seasons Foods",
+    role: "Audit Intern",
+    period: "Aug 2023 – Sep 2023",
+    tasks:
+      "Performed inventory audits and reconciliations; identified process gaps that reduced count variances.",
+  },
+];
 
   return (
     <HUD>
@@ -255,10 +212,11 @@ export default function Home() {
             </div>
 
             <p className="text-lg text-foreground leading-relaxed max-w-2xl font-sans font-medium italic !whitespace-pre-line">
-              "I specialize in Artificial Intelligence with hands-on experience
-              in machine learning, game AI, and system-level projects. Most of
-              my work revolves around Python and Unity, where I experiment with
-              intelligent agents, simulations, and real-world problem solving.."
+              "Final-year AI student building end-to-end ML systems — from
+              custom-trained CNN and YOLO models to LLM-powered agents with RAG,
+              voice I/O, and computer vision. I work across Python, FastAPI,
+              and Unity (C#), and I care about shipping working prototypes, not
+              just notebooks."
             </p>
 
             <div className="pt-4">
