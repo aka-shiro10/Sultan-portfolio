@@ -55,109 +55,109 @@ export default function Home() {
     addXp(2);
   };
 
-const projects = [
-  // ── AI / ML  (primary signal) ──────────────────────────────
-  {
-    title: "Evolution Simulator",
-    description:
-      "Unity simulation where agents with feed-forward neural networks evolve foraging behavior under selection pressure. Population-based genetic algorithm with mutation and crossover.",
-    tags: ["Unity", "ANN", "Genetic Algorithms"],
-    github: "https://github.com/aka-shiro10",
-  },
-  {
-    title: "Car Racing AI Trainer",
-    description:
-      "Reinforcement learning setup using Unity ML-Agents to train cars on procedurally generated tracks. Reward shaping experiments for stable lap-time learning.",
-    tags: ["Unity", "ML-Agents", "Reinforcement Learning"],
-    github: "https://github.com/aka-shiro10",
-  },
-  {
-    title: "Network Anomaly Detection",
-    description:
-      "Python ML pipeline that flags anomalous network traffic flows using classical models on labeled traffic data. Packaged with a Tkinter GUI for live inspection.",
-    tags: ["Python", "scikit-learn", "GUI"],
-    github: "https://github.com/aka-shiro10",
-  },
-  {
-    title: "Server Parallel Log Analyzer",
-    description:
-      "High-performance log-processing tool using Python multiprocessing to chunk and aggregate massive server logs in parallel with real-time statistics.",
-    tags: ["Python", "Multiprocessing", "Systems"],
-    github: "https://github.com/aka-shiro10",
-  },
+  const projects = [
+    // ── AI / ML  (primary signal) ──────────────────────────────
+    {
+      title: "Evolution Simulator",
+      description:
+        "Unity simulation where agents with feed-forward neural networks evolve foraging behavior under selection pressure. Population-based genetic algorithm with mutation and crossover.",
+      tags: ["Unity", "ANN", "Genetic Algorithms"],
+      github: "https://github.com/aka-shiro10",
+    },
+    {
+      title: "Car Racing AI Trainer",
+      description:
+        "Reinforcement learning setup using Unity ML-Agents to train cars on procedurally generated tracks. Reward shaping experiments for stable lap-time learning.",
+      tags: ["Unity", "ML-Agents", "Reinforcement Learning"],
+      github: "https://github.com/aka-shiro10",
+    },
+    {
+      title: "Network Anomaly Detection",
+      description:
+        "Python ML pipeline that flags anomalous network traffic flows using classical models on labeled traffic data. Packaged with a Tkinter GUI for live inspection.",
+      tags: ["Python", "scikit-learn", "GUI"],
+      github: "https://github.com/aka-shiro10",
+    },
+    {
+      title: "Server Parallel Log Analyzer",
+      description:
+        "High-performance log-processing tool using Python multiprocessing to chunk and aggregate massive server logs in parallel with real-time statistics.",
+      tags: ["Python", "Multiprocessing", "Systems"],
+      github: "https://github.com/aka-shiro10",
+    },
 
-  // ── Game Development  (secondary signal) ──────────────────
-  {
-    title: "Muffin Time",
-    description:
-      "Networked Unity platformer with handcrafted art and real-time multiplayer mechanics. Built networking, lobby system, and synced gameplay state across clients.",
-    tags: ["Unity", "Networking", "Multiplayer"],
-    github: "https://github.com/aka-shiro10",
-  },
-  {
-    title: "Visual Novel",
-    description:
-      "Story-driven game built with Ren'Py featuring branching dialogue, character art, and persistent save state.",
-    tags: ["Ren'Py", "Narrative Design"],
-    github: "https://github.com/aka-shiro10",
-  },
+    // ── Game Development  (secondary signal) ──────────────────
+    {
+      title: "Muffin Time",
+      description:
+        "Networked Unity platformer with handcrafted art and real-time multiplayer mechanics. Built networking, lobby system, and synced gameplay state across clients.",
+      tags: ["Unity", "Networking", "Multiplayer"],
+      github: "https://github.com/aka-shiro10",
+    },
+    {
+      title: "Visual Novel",
+      description:
+        "Story-driven game built with Ren'Py featuring branching dialogue, character art, and persistent save state.",
+      tags: ["Ren'Py", "Narrative Design"],
+      github: "https://github.com/aka-shiro10",
+    },
 
-  // ── Web Development  (tertiary signal) ────────────────────
-  {
-    title: "WakeelOnline",
-    description:
-      "React + TailwindCSS platform connecting clients with verified lawyers, including profile management, search, and consultation booking.",
-    tags: ["React", "TailwindCSS", "Full-Stack"],
-    github: "https://github.com/aka-shiro10",
-  },
-  {
-    title: "Hero Academy",
-    description:
-      "Web platform where teachers can offer tuition to students, with class scheduling and student-teacher matching.",
-    tags: ["React", "Web App"],
-    github: "https://github.com/aka-shiro10",
-  },
-  {
-    title: "Chatting App",
-    description:
-      "Real-time chat application deployed on Microsoft Azure with cloud database, authentication, and live messaging.",
-    tags: ["Azure", "Real-time", "Cloud"],
-    github: "https://github.com/aka-shiro10",
-  },
+    // ── Web Development  (tertiary signal) ────────────────────
+    {
+      title: "WakeelOnline",
+      description:
+        "React + TailwindCSS platform connecting clients with verified lawyers, including profile management, search, and consultation booking.",
+      tags: ["React", "TailwindCSS", "Full-Stack"],
+      github: "https://github.com/aka-shiro10",
+    },
+    {
+      title: "Hero Academy",
+      description:
+        "Web platform where teachers can offer tuition to students, with class scheduling and student-teacher matching.",
+      tags: ["React", "Web App"],
+      github: "https://github.com/aka-shiro10",
+    },
+    {
+      title: "Chatting App",
+      description:
+        "Real-time chat application deployed on Microsoft Azure with cloud database, authentication, and live messaging.",
+      tags: ["Azure", "Real-time", "Cloud"],
+      github: "https://github.com/aka-shiro10",
+    },
 
-  // ── Hardware / Other ──────────────────────────────────────
-  {
-    title: "Macropad",
-    description:
-      "Custom programmable keypad built with Arduino Pro Micro and QMK firmware for productivity shortcuts and macros.",
-    tags: ["Arduino", "QMK", "Hardware"],
-    github: "https://github.com/aka-shiro10",
-  },
-];
+    // ── Hardware / Other ──────────────────────────────────────
+    {
+      title: "Macropad",
+      description:
+        "Custom programmable keypad built with Arduino Pro Micro and QMK firmware for productivity shortcuts and macros.",
+      tags: ["Arduino", "QMK", "Hardware"],
+      github: "https://github.com/aka-shiro10",
+    },
+  ];
 
-const internships = [
-  {
-    company: "Sybrid",
-    role: "Data / ML Intern",
-    period: "May 2025 – Jul 2025",
-    tasks:
-      "Built ETL pipelines, set up a vector DB, and prototyped a RAG chatbot. Trained the RAG pipeline using a custom bash automation script for repeatable end-to-end experiments.",
-  },
-  {
-    company: "KeyMech",
-    role: "Software Intern",
-    period: "Jul 2024 – Sep 2024",
-    tasks:
-      "Shipped cross-platform mobile features and REST API integrations used by field maintenance teams. Owned production build pipelines.",
-  },
-  {
-    company: "Seasons Foods",
-    role: "Audit Intern",
-    period: "Aug 2023 – Sep 2023",
-    tasks:
-      "Performed inventory audits and reconciliations; identified process gaps that reduced count variances.",
-  },
-];
+  const internships = [
+    {
+      company: "Sybrid",
+      role: "Data / ML Intern",
+      period: "May 2025 – Jul 2025",
+      tasks:
+        "Built ETL pipelines, set up a vector DB, and prototyped a RAG chatbot. Trained the RAG pipeline using a custom bash automation script for repeatable end-to-end experiments.",
+    },
+    {
+      company: "KeyMech",
+      role: "Software Intern",
+      period: "Jul 2024 – Sep 2024",
+      tasks:
+        "Shipped cross-platform mobile features and REST API integrations used by field maintenance teams. Owned production build pipelines.",
+    },
+    {
+      company: "Seasons Foods",
+      role: "Audit Intern",
+      period: "Aug 2023 – Sep 2023",
+      tasks:
+        "Performed inventory audits and reconciliations; identified process gaps that reduced count variances.",
+    },
+  ];
 
   return (
     <HUD>
@@ -354,7 +354,7 @@ const internships = [
                 Operational_History
               </h2>
               <p className="font-mono text-[8px] text-foreground/80 uppercase font-bold">
-                19 Successful Deployments Found
+                10 Successful Deployments Found
               </p>
             </div>
           </div>
@@ -373,6 +373,8 @@ const internships = [
                   title={p.title}
                   description={p.description}
                   tags={p.tags}
+                  github={p.github}
+                  link={(p as { link?: string }).link}
                 />
               </motion.div>
             ))}
@@ -396,33 +398,77 @@ const internships = [
               <div className="space-y-8">
                 <div className="space-y-2">
                   <h3 className="font-game text-2xl text-foreground uppercase group-hover:text-primary transition-colors">
-                    AI-Powered Smart System
+                    ENE — 3D AI Desktop Companion
                   </h3>
-                  <div className="flex gap-2 font-mono text-[10px] text-foreground/80 uppercase font-bold">
+                  <div className="flex flex-wrap gap-2 font-mono text-[10px] text-foreground/80 uppercase font-bold">
                     <span>STATUS: IN_DEVELOPMENT</span>
+                    <span>|</span>
+                    <span>FYP_2025-26</span>
                     <span>|</span>
                     <span>THREAT_LEVEL: OMEGA</span>
                   </div>
                 </div>
 
-                <p className="text-foreground leading-relaxed font-medium text-lg">
-                  A high-fidelity integration of Computer Vision and NLP
-                  protocols. This system decodes real-time visual streams and
-                  processes semantic intent to bridge the gap between human
-                  interaction and machine intelligence.
+                <p className="text-foreground leading-relaxed font-medium text-base">
+                  A voice-driven 3D anime-style AI companion that runs as a
+                  transparent always-on-top Windows overlay. ENE listens, watches
+                  your face for emotion, sees your screen, opens or closes apps,
+                  and remembers conversations across sessions. Unity (C#) client
+                  on Windows, Python FastAPI backend on Ubuntu, talking over LAN
+                  via REST + WebSocket.
                 </p>
+
+                <ul className="space-y-2 text-sm text-foreground/90 font-medium list-none">
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">▸</span>
+                    <span>
+                      Custom 7-class emotion CNN trained on FER-2013 (
+                      <span className="text-primary font-bold">66.3% acc</span>)
+                      via Unity Sentis ONNX
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">▸</span>
+                    <span>
+                      YOLOv8s 7-class UI element detector at{" "}
+                      <span className="text-primary font-bold">
+                        95.85% mAP@0.5
+                      </span>{" "}
+                      for real-time screen analysis
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">▸</span>
+                    <span>
+                      Whisper STT + Kokoro TTS + Groq LLaMA-3.1 — full voice loop
+                      with ~1–2s latency
+                    </span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-bold">▸</span>
+                    <span>
+                      Fernet-encrypted SQLite memory with adaptive personality
+                      scoring every 10 turns
+                    </span>
+                  </li>
+                </ul>
 
                 <div className="flex flex-wrap gap-3">
                   {[
-                    "TensorFlow",
-                    "Deep Learning",
+                    "Unity (C#)",
+                    "Python",
+                    "FastAPI",
+                    "WebSocket",
+                    "Groq LLM",
+                    "Whisper",
+                    "Kokoro TTS",
                     "YOLOv8",
-                    "Transformers",
-                    "React",
+                    "ONNX",
+                    "SQLite",
                   ].map((tag) => (
                     <span
                       key={tag}
-                      className="px-4 py-2 bg-white border border-black/10 rounded-full font-mono text-[10px] text-primary uppercase shadow-sm font-bold"
+                      className="px-3 py-1.5 bg-white border border-black/10 rounded-full font-mono text-[10px] text-primary uppercase shadow-sm font-bold"
                     >
                       {tag}
                     </span>
