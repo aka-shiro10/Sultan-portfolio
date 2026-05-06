@@ -452,28 +452,6 @@ export default function Home() {
                     </span>
                   </li>
                 </ul>
-
-                <div className="flex flex-wrap gap-3">
-                  {[
-                    "Unity (C#)",
-                    "Python",
-                    "FastAPI",
-                    "WebSocket",
-                    "Groq LLM",
-                    "Whisper",
-                    "Kokoro TTS",
-                    "YOLOv8",
-                    "ONNX",
-                    "SQLite",
-                  ].map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1.5 bg-white border border-black/10 rounded-full font-mono text-[10px] text-primary uppercase shadow-sm font-bold"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
               </div>
 
               <div className="relative aspect-video rounded-xl bg-white border border-black/10 overflow-hidden group-hover:border-primary/40 transition-all shadow-inner">
@@ -511,6 +489,37 @@ export default function Home() {
                   <span>Neural_Node_Active</span>
                   <span>78% Core Load</span>
                 </div>
+              </div>
+            </div>
+
+            {/* ── Tech Stack (full width, below grid) ── */}
+            <div className="mt-12 pt-8 border-t border-black/10">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="font-mono text-[10px] text-primary uppercase tracking-[0.3em] font-bold">
+                  Tech_Stack
+                </span>
+                <div className="h-[1px] flex-1 bg-black/10" />
+              </div>
+              <div className="flex flex-wrap gap-3">
+                {[
+                  "Unity (C#)",
+                  "Python",
+                  "FastAPI",
+                  "WebSocket",
+                  "Groq LLM",
+                  "Whisper",
+                  "Kokoro TTS",
+                  "YOLOv8",
+                  "ONNX",
+                  "SQLite",
+                ].map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1.5 bg-white border border-black/10 rounded-full font-mono text-[10px] text-primary uppercase shadow-sm font-bold"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
